@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<article class="author">
+
+  <header class="post-header">
+    {% if page.picture %}<div class="author-picture"><img src="/img/authors/{{ page.picture }}"></div>{% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  {% if page.website or page.email %}
+  <ul class="unstyled">
+    {% if page.email %}
+    <li><i class="fa fa-envelope"></i> <a href="mailto:{{ page.email }}">{{ page.email }}</a></li>
+    {% endif %}
+    {% if page.website %}
+    <li><i class="fa fa-user"></i> <a href="{{ page.website }}">{{ page.website | remove: "http://" }}</a></li>
+    {% endif %}
+  </ul>
+  {% endif %}
+
+  <div class="post-content clearfix">
+    {{ content }}
+  </div>
+
+{% if page.social %}
+<ul class="social-media">
+  {% if page.social.twitter %}
+    <li><a href="https://twitter.com/{{ page.social.twitter }}"><i class="fa fa-twitter"></i></a></li>
+  {% endif %}
+  {% if page.social.github %}
+    <li><a href="https://github.com/{{ page.social.github }}"><i class="fa fa-github"></i></a></li>
+  {% endif %}
+  {% if page.social.stackoverflow %}
+    <li><a href="https://stackoverflow.com/users/{{ page.social.stackoverflow }}"><i class="fa fa-stack-overflow"></i></a></li>
+  {% endif %}
+  {% if page.social.facebook %}
+    <li><a href="https://facebook.com/{{ page.social.facebook }}"><i class="fa fa-facebook"></i></a></li>
+  {% endif %}
+  {% if page.social.xing %}
+    <li><a href="https://xing.com/profile/{{ page.social.xing }}"><i class="fa fa-xing"></i></a></li>
+  {% endif %}
+  {% if page.social.lanyrd %}
+    <li><a href="https://lanyrd.com/profile/{{ page.social.lanyrd }}"><i class="fa fa-file-powerpoint-o"></i></a></li>
+  {% endif %}
+</ul>
+{% endif %}
+
+{% if page.topics %}
+<h2>Schwerpunkte</h2>
+<ul>
+    {% for topic in page.topics %}
+    <li>{{ topic }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<h2>Beiträge</h2>
+
+<ul>
+{% assign post_available = false %}
+{% for post in site.posts %}
+  {% for pauthor in post.author %}
+    {% if pauthor == page.username %}
+      {% assign post_available = true %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {% include date.html date=post.date %}</li>
+      {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% if post_available == false %}
+  <li>Keine Beiträge vorhanden</li>
+{% endif %}
+</ul>
+
+</article>
