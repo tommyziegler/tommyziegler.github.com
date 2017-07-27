@@ -14,8 +14,8 @@
 #                                                            |___/
 
 # Metadata
-title: opitzconsulting blog
-email: info@opitz-consulting.com
+title: Tommy Ziegler
+email: me@tommyziegler.com
 description: >
   Hier schreiben Mitarbeiter von OPITZ CONSULTING zu Technologien, Werkzeugen,
   Methoden und anderen interessanten Erkenntnissen und Erlebnissen aus ihrem
@@ -23,12 +23,12 @@ description: >
 
 # URL
 baseurl: ""
-url: "http://opitzconsulting.github.io"
+url: "http://tommyziegler.github.io"
 
 # Social Media Links
-twitter_username: OC_WIRE
-github_username: opitzconsulting
-youtube_username: OPITZCONSULTING
+twitter_username: tommyziegler_de
+github_username: tommyziegler
+youtube_username: TommyZiegler
 
 # Google Analytics
 google_analytics_code:
