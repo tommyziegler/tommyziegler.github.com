@@ -1,16 +1,15 @@
 ---
-title: Richard Attermeyer
-username: richard.attermeyer
-email: richard.attermeyer@opitz-consulting.com
-website: http://www.rattermeyer.de
-picture: richard.attermeyer.jpg
+title: Tommy Ziegler
+username: tommy.ziegler
+email: me@tommyziegler.com
+website: http://www.tommyziegler.com
+picture: tommy.ziegler.jpg
 social:
-  twitter: rattermeyer
-  github: rattermeyer
-  stackoverflow: 1838932/rattermeyer
-  facebook: rattermeyer
-  xing: richard_attermeyer
-  lanyrd: richard_attermeyer
+  twitter: tommyziegler_de
+  github: tommyziegler
+  stackoverflow: 4551773/tommy-ziegler
+  facebook: tommyziegler.de
+  xing: Tommy_Ziegler
 topics:
   - Softwarearchitektur
   - Continuous Delivery
@@ -18,5 +17,4 @@ topics:
   - Software Craftsmanship
 ---
 
-Richard Attermeyer ist Senior Solution Architect bei der OPITZ CONSULTING Deutschland GmbH. Er beschäftigt sich seit mehreren Jahren mit der Architektur und Implementierung von Anwendungen im agilen Umfeld. Er konzentriert sich dabei aktuell sowohl auf die methodischen, organisatorischen und
-technologischen Herausforderungen im Bereich Continuous Delivery und DevOps.
+Tommy Ziegler foo bar....
