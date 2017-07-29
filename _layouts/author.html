@@ -56,6 +56,16 @@ layout: default
 </ul>
 {% endif %}
 
+{% if page.projects %}
+<h2>Projekte</h2>
+<ul>
+    {% for project in page.projects %}
+    <li>{{ project }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
 <h2>Beiträge</h2>
 
 <ul>

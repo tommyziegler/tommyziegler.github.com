@@ -15,6 +15,17 @@ topics:
   - Continuous Delivery
   - DevOps
   - Software Craftsmanship
+projects:
+  - 2017 till now
+    - position: Software Architect / DevOps Specialist
+    - company: EWE TEL GmbH in Oldenburg (DE) (i.A. OPITZ-Consulting)
+  - 2016
+    - position: position
+    - company: company
+
+
 ---
 
 Tommy Ziegler foo bar ....
+
+
