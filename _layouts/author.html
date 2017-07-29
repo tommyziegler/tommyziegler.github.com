@@ -60,7 +60,7 @@ layout: default
 <h2>Projekte</h2>
 <ul>
     {% for project in page.projects %}
-    <li>{{ project }}</li>
+    <li>{{ project.title }} {{ project.position }} {{ project.company }}</li>
     {% endfor %}
 </ul>
 {% endif %}

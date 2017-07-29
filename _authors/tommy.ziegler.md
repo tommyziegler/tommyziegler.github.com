@@ -16,10 +16,10 @@ topics:
   - DevOps
   - Software Craftsmanship
 projects:
-  - 2017 till now
+  - title: "2017 till now"
     - position: Software Architect / DevOps Specialist
     - company: EWE TEL GmbH in Oldenburg (DE) (i.A. OPITZ-Consulting)
-  - 2016
+  - title: "2016"
     - position: position
     - company: company
 
